@@ -73,9 +73,7 @@ pip install -r requirements.txt
 
 O arquivo de entrada esperado é:
 
-```text
 [data/borg_traces_data.csv](https://www.kaggle.com/datasets/derrickmwiti/google-2019-cluster-sample)
-```
 
 O carregamento procura automaticamente:
 
