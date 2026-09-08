@@ -163,10 +163,3 @@ Cada etapa depende dos artefatos gerados pela etapa anterior. Para regenerar o p
 | `results/best_knn_model.joblib` | Melhor `KNeighborsRegressor` selecionado pela busca |
 | `results/metrics.txt` | Métricas do KNN e do baseline |
 | `results/prediction.png` | Visualização das previsões e dos erros absolutos |
-
-## Observações de implementação
-
-- A divisão de treino e teste preserva a ordem temporal e não embaralha os exemplos.
-- O baseline usa `X_test[:, -1]`, representando a persistência do último valor observado.
-- O mesmo scaler salvo no pré-processamento é usado para desnormalizar valores reais e previsões.
-- O MAPE pode ser instável quando os valores reais são próximos de zero; por isso, as demais métricas também são calculadas e reportadas.
